@@ -1,0 +1,238 @@
+/* Font: Karla
+Farbe: #323A45 / #848484 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "karla";
+    scroll-behavior: smooth;
+    font-size: 12px;
+}
+
+@font-face {
+    font-family: "karla";
+    src: url(../fonts/Karla-VariableFont_wght.ttf);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+header h1 {
+    /* padding: 5px; */
+}
+
+header button {
+    width: 40px;
+    margin-left: auto;
+}
+
+
+
+/* header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+} */
+
+/* Ende Header, Anfang Main */
+/* Styling für das Lead Product */
+.leadProduct {
+    margin: 20px;
+}
+
+.leadProduct img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.leadProduct figcaption {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leadProduct figcaption div h2:nth-last-of-type(1) {
+    color: grey;
+    font-size: 0.9em;
+}
+
+.leadProduct figcaption p {
+    display: flex;
+}
+
+.leadProduct figcaption div {
+    display: block;
+}
+
+/* Styling für die Grid-Kästchen */
+.grid {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.grid figure img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.grid figure figcaption {
+    display: flex;
+    /* align-items: center; */
+    /* dies align items führt dazu, dass der Preis mittig dargestellt wird*/
+    justify-content: space-between;
+}
+
+.grid figure figcaption div h2:nth-last-of-type(1) {
+    color: grey;
+    font-size: 0.9em;
+}
+
+.grid figure figcaption div {
+    display: block;
+}
+
+/* Zuweisung der Divs in das Grid */
+.grid11 {
+    grid-columns: 1/2;
+    grid-row: 1/2;
+}
+
+.grid12 {
+    grid-columns: 2/3;
+    grid-row: 1/2;
+}
+
+.grid13 {
+    grid-columns: 3/4;
+    grid-row: 1/2;
+}
+
+.grid21 {
+    grid-columns: 1/2;
+    grid-row: 2/3;
+}
+
+.grid22 {
+    grid-columns: 2/3;
+    grid-row: 2/3;
+}
+
+.grid22 {
+    grid-columns: 3/4;
+    grid-row: 2/3;
+}
+
+/* Styling Footer */
+footer {
+    margin: 20px;
+}
+
+footer section {
+    display: grid;
+    grid-template-columns: auto 15% 25% 15%;
+    grid-template-areas:
+        "footer11 footer21 footer31 footer41"
+        "footer12 footer22 footer32 footer42"
+        "footer12 footer23 footer33 footer43"
+        "footer12 footer23 footer33 footer44";
+}
+
+.footer11 {
+    grid-area: footer11;
+    font-variation-settings: "wght" 700;
+    margin-bottom: 10px;
+}
+
+.footer21 {
+    grid-area: footer21;
+    font-variation-settings: "wght" 700;
+}
+
+.footer31 {
+    grid-area: footer31;
+    font-variation-settings: "wght" 700;
+}
+
+.footer41 {
+    grid-area: footer41;
+    font-variation-settings: "wght" 700;
+}
+
+.footer12 {
+    grid-area: footer12;
+}
+
+.footer22 {
+    grid-area: footer22;
+}
+
+.footer32 {
+    grid-area: footer32;
+}
+
+.footer42 {
+    grid-area: footer42
+}
+
+.footer12 {
+    grid-area: footer12;
+}
+
+.footer23 {
+    grid-area: footer23;
+}
+
+.footer33 {
+    grid-area: footer33;
+}
+
+.footer43 {
+    grid-area: footer43;
+}
+
+.footer12 {
+    grid-area: footer12;
+}
+
+.footer23 {
+    grid-area: footer23;
+}
+
+.footer33 {
+    grid-area: footer33;
+}
+
+.footer44 {
+    grid-area: footer44;
+}
+
+/* MOBILE ANSICHT */
+@media only screen and (max-width: 576px) {
+
+    .grid {
+        margin: 20px;
+        display: block;
+        /* grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 10px; */
+    }
+
+    header nav {
+        text-align: end;
+    }
+}
